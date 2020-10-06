@@ -4,9 +4,12 @@
 // input: 4
 // output: 24
 // 1*2*3*4 = 24
-
 function factorials(num) {
-
+  let finalNum = 1
+  for (let i = 1; i <= num; i++) {
+    finalNum *= i;
+  }
+  return(finalNum)
 }
 
 // ------------------------------------------
