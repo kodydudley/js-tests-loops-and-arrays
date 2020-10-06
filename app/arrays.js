@@ -88,8 +88,14 @@ let flights = [{
 
 
 function flightCost(destination, firstClass) {
-    //***hint: use the find method***
-
+    for (let i = 0; i <= flights.length; i++) {
+        let purchased = flights[i].to;
+        if (purchased === destination.toUpperCase() && firstClass === true) {
+            return flights[i].prices.firstClass;
+        } else if (purchased === destination.toUpperCase()) {
+            return flights[i].prices.standard;
+        }
+    }
 }
 
 
