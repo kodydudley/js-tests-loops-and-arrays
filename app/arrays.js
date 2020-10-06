@@ -35,7 +35,7 @@ function largestNum(arr) {
 
 function elemsTimesLength(arr) {
     let newArr = []
-    for(let i = 0; i <arr.length; i++ ){
+    for (let i = 0; i < arr.length; i++) {
         newArr.push(arr[i] * arr.length);
     }
     return newArr;
@@ -52,7 +52,9 @@ function elemsTimesLength(arr) {
 // Primitive data types - https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 
 function arrayFlattener(arr) {
-
+    let newArr = [];
+    newArr.valueOf(arr);
+    console.log(newArr);
 }
 
 
@@ -103,9 +105,34 @@ function flightCost(destination, firstClass) {
 // output: { error: "No user with that id." } 
 
 
-let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'Peter' },
-{ id: 17, name: 'St. MaryLou de la Playa Carmen' }, { id: 51, name: 'Doug' },
-{ id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
+let staff = [{
+        id: 1,
+        name: 'Jon'
+    }, {
+        id: 2,
+        name: 'Yuli'
+    }, {
+        id: 21,
+        name: 'Peter'
+    },
+    {
+        id: 17,
+        name: 'St. MaryLou de la Playa Carmen'
+    }, {
+        id: 51,
+        name: 'Doug'
+    },
+    {
+        id: 881,
+        name: 'Paul'
+    }, {
+        id: 0,
+        name: 'Jon'
+    }, {
+        id: 999,
+        name: 'Timma'
+    }
+]
 
 function findById(id) {
 
@@ -135,4 +162,10 @@ let theBand = {
 }
 
 function bandMemberDetails(name) {
+    for (let i = 0; i < theBand.members.length; i++) {
+        let bandMember = theBand.members[i]
+        if (bandMember.name === name) {
+            return bandMember.name + " is in the band and plays the " + (bandMember.instrument);
+        }
+    }
 }
