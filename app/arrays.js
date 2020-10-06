@@ -54,7 +54,7 @@ function elemsTimesLength(arr) {
 function arrayFlattener(arr) {
     let newArr = [];
     newArr.valueOf(arr);
-    console.log(newArr);
+    return (newArr);
 }
 
 
@@ -141,7 +141,15 @@ let staff = [{
 ]
 
 function findById(id) {
+    for (let i = 0; i < staff.length; i++) {
 
+        if (staff[i].id == id) {
+            return staff[i]
+        } else {}
+    }
+    return {
+        error: "No user with that id."
+    }
 }
 
 
