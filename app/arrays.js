@@ -19,7 +19,9 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
-    
+    arr.sort();
+    let newPop = arr.pop();
+    return newPop;
 }
 
 
@@ -32,6 +34,11 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    let newArr = []
+    for(let i = 0; i <arr.length; i++ ){
+        newArr.push(arr[i] * arr.length);
+    }
+    return newArr;
 }
 
 
