@@ -23,6 +23,7 @@ function letterChecker(str) {
 // output: true (because 4+3)
 
 function sumEqualsTarget(arr, target) {
+
 }
 
 
@@ -35,5 +36,4 @@ function sumEqualsTarget(arr, target) {
 // input:  [2, 9, 4, 3, 6, 6, 1, 5, 8]
 // output: [2, 1, 4, 3, 6, 6, 5, 9, 8]
 
-function oddAscender(arr) {
-}
+function oddAscender(arr) {}
